@@ -92,7 +92,7 @@ reprex_selection <- poof::new_trick(
 style_selection <- poof::new_trick(
   "Style selection wih 'styler'",
   ~ selection_is_parsable(symbol_ok = FALSE),
-  ~ {ƒ
+  ~ {
     sel <- current_selection()
     replace_selection(
       paste(styler::style_text(sel), collapse = "\n"))
